@@ -68,6 +68,26 @@
     font-size: 16px;
 }
 
+#sidebar #footer
+{
+    position: fixed;
+    bottom: 100px;
+
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+#sidebar #footer p
+{
+    margin-left: 38%;
+
+    width: 100%;
+    color: #808080;
+}
+
 #portfolio
 {
     margin-left: 260px;
