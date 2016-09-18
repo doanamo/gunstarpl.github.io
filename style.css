@@ -18,9 +18,9 @@
 {
     position: fixed;
     height: 100%;
-    width: 240px;
+    width: 200px;
 
-    padding-top: 100px;
+    padding-top: 90px;
 
     border-style: solid;
     border-right-width: 0px;
@@ -80,7 +80,7 @@
 
 #sidebar #footer p
 {
-    margin-left: 38%;
+    margin-left: 24%;
 
     width: 100%;
     color: #808080;
@@ -88,7 +88,7 @@
 
 #portfolio
 {
-    margin-left: 260px;
+    margin-left: 224px;
 
     min-width: 800px;
     max-width: 800px;
@@ -96,7 +96,7 @@
 
 #portfolio #title
 {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 0px;
 
     font-weight: bold;
