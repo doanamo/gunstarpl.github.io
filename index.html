@@ -17,7 +17,7 @@
                     Game QA Testing<br>
                     <br>             	
                     <span style="font-size: 18px">&#9872;</span> Warsaw, Poland<br>
-                    &#9993; doanpiotr@gmail.com<br>
+                    &#9993; <a href="mailto:doanpiotr@gmail.com" target="_top">doanpiotr@gmail.com</a><br>
                     &#9743; 573 273 111<br>
                 </p>
             </div>
@@ -62,9 +62,8 @@
                         - Cache system for storing expensive calculations between application's executions.<br>
                         - Basic 2D rendering done with shaders and batching/instancing.<br>
                         - Quake like console with input and variables.<br>
-                        - Elegant logging system using stream operators.<br>
                         - Entity/Component object system.<br>
-                        - Scripting engine using Lua.<br>
+                        - Scripting engine using LuaJIT.<br>
                         <br>
                         Video: <a target="_blank" href="images/showcase_12a.gif">GIF</a><br>
                         Source: <a target="_blank" href="https://github.com/gunstarpl/Game-Engine-12-2013">GitHub</a><br>
@@ -120,7 +119,7 @@
                     </div>
                     <p>
                         Collection of two mods called <i>Quick Turns</i> and <i>Quick Diplomacy</i> that greatly improve the speed of AI turn processing in Civilization V game by Fireaxis.
-                        Mods were created by writting Lua addons and modyfing the game's source code.
+                        Mods were created by writting Lua addons and modyfing the game's source code that is written in C++.
                         There is currently almost <b>a hundred thousand of players subscribed</b> to these two mods.<br>
                         <br>
                         Website: <a target="_blank" href="http://steamcommunity.com/id/gunstarpl/myworkshopfiles/?appid=8930">Steam</a><br>
@@ -152,7 +151,7 @@
                         <img src="images/showcase_7b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 8px">
                     </a> 
                     <p>
-                        Normal and specular textures were authored in GIMP by hand.
+                        Normal and specular textures had to be authored seperately in GIMP by hand.
                         Scene features a point light casting shadows that heavily utilizes instancing along with it's cube shadow mapping for major performance improvements.
                         Shaders written in HLSL render these materials realistically with normal and specular as they are lit by the light source.
                     </p>
@@ -220,7 +219,7 @@
                     <p>
                         Scene is first rendered to many different layers on a GBuffer; each containing information like albedo, normal and specular.
                         Second pass involves combining these layers and drawing lights seperately.
-                        Scissor tests are used to improve performance by only drawing into part of the framebuffer that is affected by a rendered light source.
+                        Scissor tests are used to improve the performance by only drawing into part of the framebuffer that is affected by a rendered light source.
                     </p>
                 </div>
             </div>
@@ -233,7 +232,7 @@
                         <img src="images/showcase_6a.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid">
                     </a>
                     <p>
-                        Part of Directx 11 rendering framework demo written in C++.
+                        Part of a custom Directx 11 rendering framework demo written in C++.
                         Presents HDR feature that renders a scene into a high range framebuffer that is later mapped into a color range that can be displayed by a monitor.
                     </p>
                 </div>
@@ -261,6 +260,7 @@
                         Font glyps are first rendered to a bitmap using GDI+ and then drawn with DirectX 11 API.
                         Font cache stores previously rendered glyphs for later use.
                         Quering text metrics and wrapping information is also implemented.
+                        More efficient and capable implementation using distance fields can be found <a target="_blank" href="https://github.com/gunstarpl/Game-Engine-12-2013">here</a>.
                     </p>
                 </div>
             </div>
@@ -336,7 +336,7 @@
                     </a>
                     <p>
                         Simple tap styled mobile game written in Java using libGDX.
-                        Application written to explore and dive into developing for mobile platforms.<br>
+                        Project created to explore and dive into developing for mobile platforms.<br>
                         <br>
                         Source: <a target="_blank" href="https://github.com/gunstarpl/Mobile-Game-09-2015">GitHub</a>
                     </p>
@@ -366,7 +366,7 @@
                 </div>
             </div>
             <div id="footer">
-                <p>Liked what you have seen? Contact me!</p>
+                <p>Liked what you have seen? <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Contact me!</a></p>
             </div>
         </div>
     </div>
