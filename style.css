@@ -5,6 +5,11 @@
     border: 0px;
 }
 
+a:visited
+{
+  color: blue;
+}
+
 #page
 {
     margin-left: auto;
@@ -70,8 +75,7 @@
 
 #sidebar #footer
 {
-    position: fixed;
-    bottom: 40px;
+    margin-top: 80px;
 
     max-width: 90%;
     margin-left: auto;
@@ -80,7 +84,7 @@
 
 #sidebar #footer p
 {
-    margin-left: 24%;
+    text-align: center;
 
     width: 100%;
     color: #808080;
