@@ -89,10 +89,20 @@
 #portfolio
 {
     margin-left: 260px;
-    padding-top: 84px;
 
     min-width: 800px;
     max-width: 800px;
+}
+
+#portfolio #title
+{
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 4px;
 }
 
 #portfolio .container
@@ -105,7 +115,6 @@
 
 #portfolio .container .header
 {
-    
     font-size: 28px;
 
     border-style: solid;
