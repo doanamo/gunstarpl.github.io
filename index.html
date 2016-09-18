@@ -56,7 +56,7 @@
                         <br>
                         Notable features:<br>
                         - Font loading and rendering using signed distance fields.<br>
-                        - Cache system for storing expensive calculations between application's'\ executions.<br>
+                        - Cache system for storing expensive calculations between application's executions.<br>
                         - Basic 2D rendering done with shaders and batching/instancing.<br>
                         - Quake like console with input and variables.<br>
                         - Elegant logging system using stream operators.<br>
@@ -88,7 +88,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="body" style="padding-top: 0px">
+                <div class="body">
                     <a target="_blank" href="images/showcase_10a.gif">
                         <img src="images/showcase_10a.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid">
                     </a>
@@ -133,19 +133,25 @@
                     <a target="_blank" href="images/showcase_7a.jpg">
                         <img src="images/showcase_7a.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid">
                     </a> 
+                    <p>
+                        Part of Directx 11 rendering framework demo written in C++.
+                        Showcases Atrium Sponza Palace model improved and published by Crytek that was originally created by Frank Meinl.
+                        Scene contains a textured model imported using Assimp library that contains different types of materials.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="body">
                     <a target="_blank" href="images/showcase_7c.jpg">
-                        <img src="images/showcase_7c.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 8px">
+                        <img src="images/showcase_7c.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid">
                     </a> 
                     <a target="_blank" href="images/showcase_7b.jpg">
                         <img src="images/showcase_7b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 8px">
                     </a> 
                     <p>
-                        Part of Directx 11 rendering framework demo written in C++.
-                        Showcases Atrium Sponza Palace model improved and published by Crytek that was originally created by Frank Meinl.
-                        Scene contains a textured model imported using Assimp library that contains different types of materials.
                         Normal and specular textures were authored in GIMP by hand.
-                        Scene also features a point light casting shadows that heavily utilizes instancing along with it's cube shadow mapping for major performance improvements.
-                        Shader written in HLSL renders these materials realistically with normal and specular mappings as they are lit by the light source.
+                        Scene features a point light casting shadows that heavily utilizes instancing along with it's cube shadow mapping for major performance improvements.
+                        Shaders written in HLSL render these materials realistically with normal and specular as they are lit by the light source.
                     </p>
                 </div>
             </div>
@@ -157,21 +163,33 @@
                     <a target="_blank" href="images/showcase_5a.jpg">
                         <img src="images/showcase_5a.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid">
                     </a>
-                    <a target="_blank" href="images/showcase_5b.jpg">
-                        <img src="images/showcase_5b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 8px">
-                    </a>
-                    <a target="_blank" href="images/showcase_5c.jpg">
-                        <img src="images/showcase_5c.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 8px">
-                    </a>
                     <p>
                         Custom terrain generation and rendering engine written from scratch in C++ and utilizing DirectX 11.
                         Features random terrain generation creating landscapes with a single press of a button.
                         Terrain's vertices are created from a heightmap generated using diamond-square algorithm.
                         Terrain's texture is created by running a shader that turns it's heightmap into a normal texture.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="body">
+                    <a target="_blank" href="images/showcase_5b.jpg">
+                        <img src="images/showcase_5b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid">
+                    </a>
+                    <p>
                         Main feature implements geomipmapping that splits the entire terrain into small patches, each with different resolution based on the distance from the view.
                         Terrain patches are later carefully connected to each other in order to avoid seams.
                         This feature along with frustum culling improves performance from 10 FPS to 150 FPS on 1024x1024 heightmap terrain.
                         Rendering a terrain requires only a single draw call.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="body">
+                    <a target="_blank" href="images/showcase_5c.jpg">
+                        <img src="images/showcase_5c.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid">
+                    </a>
+                    <p>
                         Custom framework also features a day/night cycle with a sky dome rendered using a third-party atmospheric scattering shader.
                     </p>
                 </div>
@@ -184,16 +202,22 @@
                     <a target="_blank" href="images/showcase_4a.jpg">
                         <img src="images/showcase_4a.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid">
                     </a>
-                    <a target="_blank" href="images/showcase_4b.jpg">
-                        <img src="images/showcase_4b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 8px">
-                    </a>
                     <p>
                         Implementation of deferred renderer that was written in days of Killzone 2 and S.T.A.L.K.E.R. games that brought this technique into wide popularity.
-                        Features a rendering demo written in C++ and utilizing Directx 11 that easily handles huge number of light sources that cannot be drawn easily using traditional forward rendering techniques.
+                        Features a renderer written in C++ and utilizing Directx 11 that easily handles huge number of light sources that cannot be drawn easily using traditional forward rendering techniques.
+                        Showcases a scene with Stanford Bunny and normal/specular mapping.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="body">
+                    <a target="_blank" href="images/showcase_4b.jpg">
+                        <img src="images/showcase_4b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid">
+                    </a>
+                    <p>
                         Scene is first rendered to many different layers on a GBuffer; each containing information like albedo, normal and specular.
                         Second pass involves combining these layers and drawing lights seperately.
                         Scissor tests are used to improve performance by only drawing into part of the framebuffer that is affected by a rendered light source.
-                        Showcases a scene with Stanford Bunny and normal/specular mapping.
                     </p>
                 </div>
             </div>
@@ -205,12 +229,18 @@
                     <a target="_blank" href="images/showcase_6a.jpg">
                         <img src="images/showcase_6a.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid">
                     </a>
-                    <a target="_blank" href="images/showcase_6b.jpg">
-                        <img src="images/showcase_6b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 8px">
-                    </a>
                     <p>
                         Part of Directx 11 rendering framework demo written in C++.
                         Presents HDR feature that renders a scene into a high range framebuffer that is later mapped into a color range that can be displayed by a monitor.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="body">
+                    <a target="_blank" href="images/showcase_6b.jpg">
+                        <img src="images/showcase_6b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid">
+                    </a>
+                    <p>
                         Utilizes a histogram that mimics eye adaptation to light/dark environmemnts and applies bloom effect for bright spots on the scene.
                     </p>
                 </div>
@@ -298,7 +328,8 @@
                 </div>
                 <div class="body">
                     <a target="_blank" href="images/showcase_14.gif">
-                        <img src="images/showcase_14.jpg" width=230px style="float: right; margin-left: 10px; border: 1px solid"">
+                        <img src="images/showcase_14b.jpg" width=214px style="float: right; margin-left: 10px; border: 1px solid">
+                        <img src="images/showcase_14a.jpg" width=214px style="float: right; margin-left: 10px; border: 1px solid">
                     </a>
                     <p>
                         Simple tap styled mobile game written in Java using libGDX.
@@ -330,6 +361,9 @@
                         First steps learning GLSL shaders in OpenGL.
                     </p>
                 </div>
+            </div>
+            <div id="footer">
+                <p>Liked what you have seen? Contact me!</p>
             </div>
         </div>
     </div>

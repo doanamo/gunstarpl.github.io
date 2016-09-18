@@ -71,13 +71,11 @@
 #sidebar #footer
 {
     position: fixed;
-    bottom: 100px;
+    bottom: 40px;
 
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-
-    
 }
 
 #sidebar #footer p
@@ -91,7 +89,7 @@
 #portfolio
 {
     margin-left: 260px;
-    padding-top: 100px;
+    padding-top: 84px;
 
     min-width: 800px;
     max-width: 800px;
@@ -103,17 +101,17 @@
 
     display: inline-block;
     position: relative;
-
-    margin-bottom: 12px;
 }
 
 #portfolio .container .header
 {
+    
     font-size: 28px;
 
     border-style: solid;
     border-bottom-width: 1px;
 
+    margin-top: 12px;
     margin-bottom: 4px;
 }
 
@@ -125,4 +123,14 @@
 #portfolio .container img
 {
     height: auto;
+}
+
+#portfolio #footer
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
 }
