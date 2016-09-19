@@ -218,7 +218,7 @@
                         <img src="images/showcase_4b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid">
                     </a>
                     <p>
-                        Scene is first rendered to many different layers on a GBuffer; each containing information like albedo, normal and specular.
+                        Scene is first rendered to many different layers on the geometry buffer; each containing information like albedo, normal and specular.
                         Second pass involves combining these layers and drawing lights separately.
                         Scissor tests are used to improve the performance by only drawing into part of the framebuffer that is affected by a rendered light source.
                     </p>
