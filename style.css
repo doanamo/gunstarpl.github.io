@@ -128,9 +128,10 @@ a:visited
     margin-bottom: 4px;
 }
 
-#portfolio .container .body
+#portfolio .container .body p
 {
     padding: 8px;
+    text-align: justify;
 }
 
 #portfolio .container img
