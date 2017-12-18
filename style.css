@@ -7,6 +7,7 @@ body
 {
     width: 800px;
     margin-top: 40px;
+    margin-bottom: 80px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -19,6 +20,11 @@ a:link
 a:visited
 {
     color: blue;
+}
+
+#header
+{
+    margin-bottom: 30px;
 }
 
 #header *
@@ -66,4 +72,120 @@ a:visited
 #quote
 {
     font-style: italic;
+}
+
+#sections .section *
+{
+    margin: 0px;
+}
+
+#sections .section
+{
+    display: flex;
+} 
+
+#sections .section .decor
+{
+    font-weight: 400;
+    width: auto;
+    margin-right: 8px;
+    color: orange;
+}
+
+#sections .section .title
+{
+    font-weight: 400;
+    width: auto;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+#sections .section .filler
+{
+    width: 100%;
+    margin-bottom: 6px;
+    border-bottom: 1px solid orange;
+}
+
+.section
+{
+    margin-bottom: 6px;
+}
+
+.subsection p
+{
+    margin-top: 6px;
+    text-align: justify;
+}
+
+.subsection
+{
+    margin-top: 0px;
+}
+
+.subsection h3
+{
+    font-weight: 400;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.subsection h4
+{
+    font-weight: 300;
+}
+
+.subsection ul
+{
+    margin-top: 2px;
+}
+
+.subsection ul > li
+{
+    color: orange;
+}
+
+.subsection ul > li > span
+{
+    color: black;
+}
+
+.subsection .workplace
+{
+    display: flex;
+}
+
+.subsection .workplace .name
+{
+    width: 100%;
+}
+
+.subsection .workplace .location
+{
+    font-weight: 300;
+    white-space: nowrap;
+    color: orange;
+}
+
+.subsection .position
+{
+    display: flex;
+}
+
+.subsection .position *
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.subsection .position .name
+{
+    width: 100%;
+}
+
+.subsection .position .date
+{
+    font-weight: 300;
+    white-space: nowrap;
+    color: grey;
 }
