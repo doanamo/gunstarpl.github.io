@@ -1,0 +1,69 @@
+*
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+    width: 800px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:link
+{
+    color: blue;
+}
+
+a:visited
+{
+    color: blue;
+}
+
+#header *
+{
+    margin: 0px;
+}
+
+#plate
+{
+    margin-bottom: 20px;
+}
+
+#header #name
+{
+    font-size: 42pt;
+    margin-bottom: -10px;
+}
+
+#header #firstname
+{
+    font-weight: 100;
+}
+
+#header #lastname
+{
+    font-weight: bold;
+}
+
+#header #title
+{
+    font-size: 15pt;
+    color: orange;
+}
+
+#details
+{
+    margin-bottom: 20px;
+}
+
+#born-residence
+{
+    color: grey;
+}
+
+#quote
+{
+    font-style: italic;
+}
