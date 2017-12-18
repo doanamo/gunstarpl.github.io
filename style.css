@@ -114,6 +114,11 @@ a:hover
     border-bottom: 1px solid orange;
 }
 
+b
+{
+    font-weight: 400;
+}
+
 .section
 {
     margin-bottom: 6px;
