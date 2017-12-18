@@ -1,150 +1,214 @@
 *
 {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+body
+{
+    width: 800px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:link
+{
+    color: blue;
 }
 
 a:visited
 {
-  color: blue;
+    color: blue;
 }
 
-#page
+a:hover
 {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 86%;
-
-    font-family: "PT Sans", sans-serif;
+    color: orange;
 }
 
-#sidebar
+#header
 {
-    position: fixed;
-    height: 100%;
-    width: 200px;
-
-    padding-top: 90px;
-
-    border-style: solid;
-    border-right-width: 0px;
-    border-color: grey;
-
-    background: white;
+    margin-bottom: 30px;
 }
 
-#sidebar #photo
+#header *
 {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px;
 }
 
-#sidebar #photo img
+#plate
 {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-#sidebar #info
+#header #name
 {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-
-    color: black;
+    font-size: 42pt;
+    margin-bottom: -10px;
 }
 
-#sidebar #info *
+#header #firstname
 {
-    margin-bottom: 16px;
+    font-weight: 100;
 }
 
-#sidebar #info #name
+#header #lastname
 {
     font-weight: bold;
-    font-size: 32px;
 }
 
-#sidebar #info #text
+#header #title
 {
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 15pt;
+    color: orange;
 }
 
-#sidebar #footer
+#details
 {
-    margin-top: 80px;
-
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 20px;
 }
 
-#sidebar #footer p
+#born-residence
 {
-    text-align: center;
+    color: grey;
+}
 
+#quote
+{
+    font-style: italic;
+}
+
+#sections .section *
+{
+    margin: 0px;
+}
+
+#sections .section
+{
+    display: flex;
+} 
+
+#sections .section .decor
+{
+    font-weight: 400;
+    width: auto;
+    margin-right: 8px;
+    color: orange;
+}
+
+#sections .section .title
+{
+    font-weight: 400;
+    width: auto;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+#sections .section .filler
+{
     width: 100%;
-    color: #d0d0d0;
+    margin-bottom: 6px;
+    border-bottom: 1px solid orange;
 }
 
-#portfolio
+b
 {
-    margin-left: 224px;
-
-    min-width: 800px;
-    max-width: 800px;
+    font-weight: 400;
 }
 
-#portfolio #title
+.section
 {
-    margin-top: 10px;
-    margin-bottom: 0px;
-
-    font-weight: bold;
-    font-size: 64px;
-    text-align: center;
-    letter-spacing: 4px;
+    margin-bottom: 6px;
 }
 
-#portfolio .container
+.subsection p
 {
-    width: 100%;
-
-    display: inline-block;
-    position: relative;
-}
-
-#portfolio .container .header
-{
-    font-size: 28px;
-
-    border-style: solid;
-    border-bottom-width: 1px;
-
-    margin-top: 12px;
-    margin-bottom: 4px;
-}
-
-#portfolio .container .body p
-{
-    padding: 8px;
+    margin-top: 6px;
     text-align: justify;
 }
 
-#portfolio .container img
+.subsection
 {
-    height: auto;
+    margin-top: 0px;
 }
 
-#portfolio #footer
+.subsection h3
+{
+    font-weight: 400;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.subsection h4
+{
+    font-weight: 300;
+}
+
+.subsection ul
+{
+    margin-top: 2px;
+}
+
+.subsection ul > li
+{
+    color: orange;
+}
+
+.subsection ul > li > span
+{
+    color: black;
+}
+
+.subsection .workplace
+{
+    display: flex;
+}
+
+.subsection .workplace .name
+{
+    width: 100%;
+}
+
+.subsection .workplace .location
+{
+    font-weight: 300;
+    white-space: nowrap;
+    color: orange;
+}
+
+.subsection .position
+{
+    display: flex;
+}
+
+.subsection .position *
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.subsection .position .name
+{
+    width: 100%;
+}
+
+.subsection .position .date
+{
+    font-weight: 300;
+    white-space: nowrap;
+    color: grey;
+}
+
+#footer
 {
     margin-top: 40px;
-    margin-bottom: 40px;
+}
 
-    font-style: italic;
-    font-size: 16px;
+#footer p
+{
     text-align: center;
+    color: grey;
 }
