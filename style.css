@@ -4,6 +4,12 @@
     font-weight: 300;
 }
 
+html
+{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 body
 {
     width: 800px;
