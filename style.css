@@ -89,7 +89,7 @@ a:hover
 #sections .section
 {
     display: flex;
-} 
+}
 
 #sections .section .decor
 {
@@ -124,15 +124,15 @@ b
     margin-bottom: 6px;
 }
 
+.subsection
+{
+    margin-top: 0px;
+}
+
 .subsection p
 {
     margin-top: 6px;
     text-align: justify;
-}
-
-.subsection
-{
-    margin-top: 0px;
 }
 
 .subsection h3
