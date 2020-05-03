@@ -35,8 +35,7 @@
             <h2 class="decor">//</h2><h2 class="title">Portfolio</h2><div class="filler"></div>
         </div>
         <div class="subsection">
-            <p>Welcome to the showcase of my current and past work! Here, you can find brief information about many of my projects that I have created. Please note that this site contains only work that I have created since 2013, as unfortunately I do not have many of my older hobbyist projects archived.</p>
-            <p><i>Quick tip: You can click on most thumbnails below to view short videos or additional details!</i></p>
+            <p>Welcome to the showcase of my current and past work! Here, you can find brief information about many of projects that I have created or contributed to. Please note that this site contains only work that I have created since 2013, as unfortunately I do not have many of my older projects archived.</p>
         </div>
         <div class="section">
             <h2 class="decor">//</h2><h2 class="title">Current Work</h2><div class="filler"></div>
@@ -44,7 +43,29 @@
         <div class="subsection">
             <h3>Employment</h3>
             <ul>
-                <li><span>Currently employed as <i>Senior QA Technician</i> at a game testing company <b>Testronic</b>, where I have the pleasure of working on many exciting projects developed by well known studios from all around the world. Throughout the last two years, I have made contributions towards following titles:</span></li>
+                <li><span>Currently employed as <i>Technical QA Analyst</i> at <b>CD Projekt Red</b> and working on highly anticipated release of <b>Cyberpunk 2077</b> title. I am supporting a team of gameplay and engine programmers at the studio in Warsaw.</span></li>
+                <li><span>
+                    <span>Websites:</span>
+                    <span><a target="_blank" href="https://cdprojektred.com">CD Projekt Red</a></span>, 
+                    <span><a target="_blank" href="https://www.cyberpunk.net">Cyberpunk 2077</a></span>
+                </span></li>
+            </ul>
+            <h3>Engine Programming</h3>
+            <ul>
+                <li><span>Currently working on a general purpose game engine written in C++. Utilizes OpenGL library for realtime graphics and Lua as a scripting language. Under heavy refactor as part of research towards most optimal structure/foundation for writing a robust game engine.</span></li>
+                <li><span>
+                    <span>Repository:</span>
+                    <span><a target="_blank" href="https://github.com/gunstarpl/Game-11-2017">GitHub</a></span>
+                </span></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2 class="decor">//</h2><h2 class="title">Past Employment</h2><div class="filler"></div>
+        </div>
+        <div class="subsection">
+            <h3>Testronic</h3>
+            <ul>
+                <li><span>Previously employed as <i>Senior QA Technician</i> at a game testing company <b>Testronic</b>, where I had the pleasure of working on many exciting projects developed by well known studios from all around the world. Throughout the period of two years at the company, I have made contributions towards following titles:</span></li>
                 <ul>
                     <li><span>PC Building Simulator (The Irregular Corporation)</span></li>
                     <li><span>Dead Rising 4 (Capcom Vancouver)</span></li>
@@ -66,14 +87,52 @@
                     <span><a target="_blank" href="https://www.testroniclabs.com/">Testronic</a></span>
                 </span></li>
             </ul>
-            <h3>Game Programming</h3>
-            <ul>
-                <li><span>Currently working on a general purpose game engine written in C++. Utilizes OpenGL library for realtime graphics and Lua as a scripting language. Under heavy refactor as research towards most optimal structure/foundation for writing a robust game engine.</span></li>
-                <li><span>
-                    <span>Repository:</span>
-                    <span><a target="_blank" href="https://github.com/gunstarpl/Game-11-2017">GitHub</a></span>
-                </span></li>
-            </ul>
+        </div>
+        <div class="section">
+            <h2 class="decor">//</h2><h2 class="title">Graphics Programming</h2><div class="filler"></div>
+        </div>
+        <div class="subsection">
+            <h3>Raytracer</h3>
+            <div style="display: inline-block;">
+                <a href="images/raytracer1.png">
+                    <img src="images/raytracer1.png" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: -20px">
+                </a>
+                <a href="images/raytracer2.png">
+                    <img src="images/raytracer2.png" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 10px">
+                </a>
+                <ul>
+                    <li><span>Raytracer written in Rust as a learning experience to learn a new language and to refresh knowledge about fundamentals of graphics programming. Runs on CPU and is heavily optimized to utilize multithreading, static dispatch, cache locality, link time optimizations etc. Built on top of custom SIMD math library that also has a scalar version maintained for compatibility. Project contains large number of unit tests and benchmarks to verify correctness, as heavily promoted by Rust's ecosystem and its built-in tools. Each presented images contain nearly 500 million samples rendered in almost 4 seconds on Ryzen 3600.</span></li>
+                    <li><span>Notable features:</span></li>
+                    <ul>
+                        <li><span>Saving/loading scenes to JSON files</span></li>
+                        <li><span>Lambertian/diffuse, metalic/reflective and refractive materials</span></li>
+                        <li><span>Camera defocus and motion blur</span></li>
+                        <li><span>Multisampled antialiasing</span></li>
+                    </ul>
+                    <li><span>
+                        <span>Repository:</span>
+                        <span><a target="_blank" href="https://github.com/gunstarpl/Raytracer">GitHub</a></span>
+                    </span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="decor">//</h2><h2 class="title">Multiplayer Networking</h2><div class="filler"></div>
+        </div>
+        <div class="subsection">
+            <h3>Tanks Prototype</h3>
+            <div style="display: inline-block;">
+                <a href="images/multiplayer_tanks.jpg">
+                    <img src="images/multiplayer_tanks.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: -20px">
+                </a>
+                <ul>
+                    <li><span>Prototype of a multiplayer game with custom engine built from scratch on top of SFML. Engine includes performant multithreaded networking system that supports reliable/ordered packets while using UDP sockets. System is resilient to packet loss/delay/corruptions and allows connections to in-progress game sessions.</span></li>
+                    <li><span>
+                        <span>Repository:</span>
+                        <span><a target="_blank" href="https://github.com/gunstarpl/Multiplayer-Tanks-2019">GitHub</a></span>
+                    </span></li>
+                </ul>
+            </div>
         </div>
         <div class="section">
             <h2 class="decor">//</h2><h2 class="title">Gameplay Demos</h2><div class="filler"></div>
@@ -90,11 +149,15 @@
                         <span>Repository:</span>
                         <span><a target="_blank" href="https://github.com/gunstarpl/Shooting-Character-05-2017">GitHub</a></span>
                     </span></li>
+                    <li><span>
+                        <span>Video:</span>
+                        <span><a target="_blank" href="https://www.youtube.com/embed/Qzwh0MgRDpc">YouTube</a></span>
+                    </span></li>
                 </ul>
             </div>
             <h3>Shooting Character in Unity 5</h3>
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_10c.webm">
+                <a href="old-2017/images/showcase_10c.webm">
                     <img src="old-2017/images/showcase_10c.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: -20px">
                 </a>
                 <ul>
@@ -103,11 +166,15 @@
                         <span>Repository:</span>
                         <span><a target="_blank" href="https://github.com/gunstarpl/Shooting-Character-02-2017">GitHub</a></span>
                     </span></li>
+                    <li><span>
+                        <span>Video:</span>
+                        <span><a target="_blank" href="old-2017/images/showcase_10c.webm">WebM</a></span>
+                    </span></li>
                 </ul>
             </div>
             <h3>Character Locomotion in Unity 5</h3>
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_10a.gif">
+                <a href="old-2017/images/showcase_10a.gif">
                     <img src="old-2017/images/showcase_10a.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: -20px">
                 </a>
                 <ul>
@@ -116,11 +183,15 @@
                         <span>Repository:</span>
                         <span><a target="_blank" href="https://github.com/gunstarpl/Locomotion-Animation-08-2016">GitHub</a></span>
                     </span></li>
+                    <li><span>
+                        <span>Video:</span>
+                        <span><a target="_blank" href="old-2017/images/showcase_10a.gif">GIF</a></span>
+                    </span></li>
                 </ul>
             </div>
             <h3>Controller Controller in Unity 5</h3>
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_10b.gif">
+                <a href="old-2017/images/showcase_10b.gif">
                     <img src="old-2017/images/showcase_10b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: -20px">
                 </a>
                 <ul>
@@ -128,6 +199,10 @@
                     <li><span>
                         <span>Repository:</span>
                         <span><a target="_blank" href="https://github.com/gunstarpl/Character-Controller-07-2016">GitHub</a></span>
+                    </span></li>
+                    <li><span>
+                        <span>Video:</span>
+                        <span><a target="_blank" href="old-2017/images/showcase_10b.gif">GIF</a></span>
                     </span></li>
                 </ul>
             </div>
@@ -137,7 +212,7 @@
         </div>
         <div class="subsection">
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_12a.gif">
+                <a href="old-2017/images/showcase_12a.gif">
                     <img src="old-2017/images/showcase_12a.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 4px">
                     <img src="old-2017/images/showcase_12b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 10px">
                 </a>
@@ -146,18 +221,22 @@
                     <li><span>
                     Notable features:<br>
                     <ul>
-                    <li><span>Font loading and rendering using signed distance fields.</span></li>
-                    <li><span>Cache system for storing expensive calculations between application's executions.</span></li>
-                    <li><span>Very efficient 2D sprite rendering achieved with batching and instancing.</span></li>
-                    <li><span>Scripting Lua engine where the entire logic of the game resides.</span></li>
-                    <li><span>Entity/Component system for all game objects.</span></li>
-                    <li><span>Elegant logging system using stream operators.</span></li>
-                    <li><span>Quake like console with input and variables.</span></li>
+                    <li><span>Font loading and rendering using signed distance fields</span></li>
+                    <li><span>Cache system for storing expensive calculations between application's executions</span></li>
+                    <li><span>Very efficient 2D sprite rendering achieved with batching and instancing</span></li>
+                    <li><span>Scripting Lua engine where the entire logic of the game resides</span></li>
+                    <li><span>Entity/Component system for all game objects</span></li>
+                    <li><span>Elegant logging system using stream operators</span></li>
+                    <li><span>Quake like console with input and variables</span></li>
                     </ul>
                     </span></li>
                     <li><span>
                         <span>Repository:</span>
                         <span><a target="_blank" href="https://github.com/gunstarpl/Game-Engine-12-2013">GitHub</a></span>
+                    </span></li>
+                    <li><span>
+                        <span>Video:</span>
+                        <span><a target="_blank" href="old-2017/images/showcase_12a.gif">GIF</a></span>
                     </span></li>
                 </ul>
             </div>
@@ -172,7 +251,7 @@
                     <img src="images/showcase_2.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: -20px">
                 </a>
                 <ul>
-                    <li><span><i>Soundtrack Restoration</i> mod for XCOM 2's latest expansion War of the Chosen running on Unreal Engine 3. Restores and reuses unused or otherwise removed soundtracks with the help of UnrealScript.</span></li>
+                    <li><span><i>Soundtrack Restoration</i> mod for <b>XCOM 2 War of the Chosen</b> by <i>Fireaxis</i> running on Unreal Engine 3. Restores and reuses unused or otherwise removed soundtracks with the help of UnrealScript.</span></li>
                     <li><span>
                         <span>Website:</span>
                         <span><a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1137361817">Steam Workshop</a></span>
@@ -192,7 +271,7 @@
                     <img src="old-2017/images/showcase_9b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 10px">
                 </a>
                 <ul>
-                    <li><span>Collection of two mods called <i>Quick Turns</i> and <i>Quick Diplomacy</i> that greatly improve the speed of AI turn processing in <b>Civilization V</b> game by <i>Fireaxis</i>. Mods were created by writing Lua addons and modifying the game's source code that is written in C++. Both of these modifications have been downloaded by almost <b>two hundred thousand of players</b> in total.</span></li>
+                    <li><span>Collection of two mods called <i>Quick Turns</i> and <i>Quick Diplomacy</i> that greatly improve the speed of AI turn processing in <b>Civilization V</b> game by <i>Fireaxis</i>. Mods were created by writing Lua addons and modifying the game's source code that is written in C++. Both of these modifications have been downloaded by almost <b>two hundred thousands of unique players</b>.</span></li>
                     <li><span>
                         <span>Website:</span>
                         <span><a target="_blank" href="http://steamcommunity.com/id/gunstarpl/myworkshopfiles/?appid=8930">Steam Workshop</a></span>
@@ -205,11 +284,11 @@
             </div>
         </div>
         <div class="section">
-            <h2 class="decor">//</h2><h2 class="title">Terrain Rendering</h2><div class="filler"></div>
+            <h2 class="decor">//</h2><h2 class="title">Randomized Terrain</h2><div class="filler"></div>
         </div>
         <div class="subsection">
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_5a.jpg">
+                <a href="old-2017/images/showcase_5a.jpg">
                     <img src="old-2017/images/showcase_5a.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 4px">
                 </a>
                 <ul>
@@ -217,15 +296,15 @@
                 </ul>
             </div>
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_5b.jpg">
+                <a href="old-2017/images/showcase_5b.jpg">
                     <img src="old-2017/images/showcase_5b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 10px">
                 </a>
                 <ul>
-                    <li><span>Main feature implements geomipmapping that splits the entire terrain into small patches, each with a different resolution based on the distance from the viewer. Terrain patches are later carefully connected to each other in order to remove seams. This feature along with the frustum culling improves performance from 10 FPS to 150 FPS on 1024x1024 height map terrain. Rendering the entire terrain and all of its patches requires only a single draw call.</span></li>
+                    <li><span>Main feature implements geomipmapping that splits the entire terrain into small patches, each with a different resolution based on the distance from the viewer. Terrain patches are later carefully connected to each other in order to remove seams. This feature along with the frustum culling improves performance from 10 FPS to 150 FPS on 1024x1024 height map terrain. Rendering the entire terrain and all of its patches requires only a single draw call (using dynamic index buffer).</span></li>
                 </ul>
             </div>
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_5c.jpg">
+                <a href="old-2017/images/showcase_5c.jpg">
                     <img src="old-2017/images/showcase_5c.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 10px">
                 </a>
                 <ul>
@@ -238,7 +317,7 @@
         </div>
         <div class="subsection">
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_7a.jpg">
+                <a href="old-2017/images/showcase_7a.jpg">
                     <img src="old-2017/images/showcase_7a.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 4px">
                 </a>
                 <ul>
@@ -246,14 +325,14 @@
                 </ul>
             </div>
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_7c.jpg">
+                <a href="old-2017/images/showcase_7c.jpg">
                     <img src="old-2017/images/showcase_7c.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 10px">
                 </a>
-                <a target="_blank" href="old-2017/images/showcase_7b.jpg">
+                <a href="old-2017/images/showcase_7b.jpg">
                     <img src="old-2017/images/showcase_7b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 10px">
                 </a>
                 <ul>
-                    <li><span>Scene features a point light casting shadows that heavily utilizes hardware instancing along with its cube shadow mapping for major performance improvements. Imported and rendered model contains multiple different textures and types of materials. Normal and specular maps were separately created for each imported diffuse texture. Shaders written in HLSL render these materials with correct normal and specular lighting.</span></li>
+                    <li><span>Scene features a point light casting shadows that heavily utilizes hardware instancing along with its cube shadow mapping for major performance improvements. Imported and rendered model contains multiple different textures and types of materials. Normal and specular maps were separately created for each imported diffuse texture. Shaders written in HLSL render these materials with normal and specular lighting.</span></li>
                 </ul>
             </div>
         </div>
@@ -262,7 +341,7 @@
         </div>
         <div class="subsection">
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_4a.jpg">
+                <a href="old-2017/images/showcase_4a.jpg">
                     <img src="old-2017/images/showcase_4a.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 4px">
                 </a>
                 <ul>
@@ -270,7 +349,7 @@
                 </ul>
             </div>
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_4b.jpg">
+                <a href="old-2017/images/showcase_4b.jpg">
                     <img src="old-2017/images/showcase_4b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 10px">
                 </a>
                 <ul>
@@ -283,19 +362,19 @@
         </div>
         <div class="subsection">
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_6b.jpg">
+                <a href="old-2017/images/showcase_6b.jpg">
                     <img src="old-2017/images/showcase_6b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 4px">
                 </a>
                 <ul>
-                    <li><span>Rendering framework demo written in C++ and utilizing Direct3D 11 API. Presents High Dynamic Range (HDR) technique that renders a scene into a high precision frame buffer that is later mapped into a color range that can be displayed by the monitor. Allows special effects such as accurate bloom or eye adaptation to be applied.</span></li>
+                    <li><span>Rendering framework demo written in C++ and utilizing Direct3D 11 API. Presents High Dynamic Range (HDR) technique that renders a scene into a high precision frame buffer that is later mapped into a color range that can be displayed by a monitor. Allows special effects such as accurate bloom or eye adaptation to be applied.</span></li>
                 </ul>
             </div>
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_6a.jpg">
+                <a href="old-2017/images/showcase_6a.jpg">
                     <img src="old-2017/images/showcase_6a.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 10px">
                 </a>
                 <ul>
-                    <li><span>Scene presents a cube mapped sphere with Fresnel reflections. Demo utilizes a histogram that mimics an eye's adaptation to the brightness of environment. This demo was based on sampled from NVIDIA SDK.</span></li>
+                    <li><span>Scene presents a cube mapped sphere with Fresnel reflections. Demo utilizes a histogram that mimics an eye's adaptation to the brightness of environment. This demo was based on samples from NVIDIA SDK.</span></li>
                 </ul>
             </div>
         </div>
@@ -304,11 +383,11 @@
         </div>
         <div class="subsection">
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_8.jpg">
+                <a href="old-2017/images/showcase_8.jpg">
                     <img src="old-2017/images/showcase_8.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 4px">
                 </a>
                 <ul>
-                    <li><span>Custom rendering framework for loading fonts and drawing text strings, written in C++ and utilizing Direct3D 11 API. Font glyphs are first rendered to a bitmap and then drawn as sprites. Dedicated cache stores previously rendered glyphs for later use. Querying text metrics allows text to be transformed or wrapped in an area. More efficient and capable implementation that uses signed distance fields can be found on my <a target="_blank" href="https://github.com/gunstarpl/Game-Engine-12-2013">GitHub</a> page.</span></li>
+                    <li><span>Custom rendering framework for loading fonts and drawing text strings, written in C++ and utilizing Direct3D 11 API. Font glyphs are first rendered to a bitmap and then drawn as sprites. Dedicated cache stores previously rendered glyphs for later use. Querying text metrics allows text to be transformed or wrapped inside an enclosed text area. More efficient and capable implementation that uses signed distance fields can be found on my <a target="_blank" href="https://github.com/gunstarpl/Game-Engine-12-2013">GitHub</a> page.</span></li>
                 </ul>
             </div>
         </div>
@@ -317,29 +396,49 @@
         </div>
         <div class="subsection">
             <div style="display: inline-block;">
-                <a target="_blank" href="https://www.youtube.com/watch?v=nCzR7ez-Hqk">
+                <a href="https://www.youtube.com/watch?v=nCzR7ez-Hqk">
                     <img src="old-2017/images/showcase_3a.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 4px">
                 </a>
-                <a target="_blank" href="https://www.youtube.com/watch?v=9oGsqDo6wVI">
+                <a href="https://www.youtube.com/watch?v=9oGsqDo6wVI">
                     <img src="old-2017/images/showcase_3c.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 10px">
                 </a>
-                <a target="_blank" href="https://www.youtube.com/watch?v=OEXpGEB1o40">
+                <a href="https://www.youtube.com/watch?v=OEXpGEB1o40">
                     <img src="old-2017/images/showcase_3b.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 10px">
                 </a>
-                <a target="_blank" href="https://www.youtube.com/watch?v=eggBy4YHIhQ">
+                <a href="https://www.youtube.com/watch?v=eggBy4YHIhQ">
                     <img src="old-2017/images/showcase_3d.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 10px">
                 </a>
                 <ul>
                     <li><span>Simulations written in C++ for the movement of AI boids in space utilizing steering behaviors. Different behaviors include: seek, arrival, follow, flee, wander and obstacle avoidance. Implementation based on a white paper by <i>Craig W. Reynolds</i>.</span></li>
+                    <li><span>
+                        <span>Videos:</span>
+                        <span><a target="_blank" href="https://www.youtube.com/watch?v=nCzR7ez-Hqk">1</a></span>
+                        <span><a target="_blank" href="https://www.youtube.com/watch?v=9oGsqDo6wVI">2</a></span>
+                        <span><a target="_blank" href="https://www.youtube.com/watch?v=OEXpGEB1o40">3</a></span>
+                        <span><a target="_blank" href="https://www.youtube.com/watch?v=eggBy4YHIhQ">4</a></span>
+                    </span></li>
                 </ul>
             </div>
+        </div>
+        <div class="section">
+            <h2 class="decor">//</h2><h2 class="title">Open Source</h2><div class="filler"></div>
+        </div>
+        <div class="subsection">
+            <h3>OpenXcom</h3>
+            <ul>
+                <li><span>Wrote a small contribution for open source implementation of <i>UFO: Enemy Unknown</i> game from 1994 that improved usability of its save system.</span></li>
+                <li><span>
+                    <span>Repository:</span>
+                    <span><a target="_blank" href="https://github.com/OpenXcom/OpenXcom">GitHub</a></span>
+                </span></li>
+            </ul>
         </div>
         <div class="section">
             <h2 class="decor">//</h2><h2 class="title">Music Player</h2><div class="filler"></div>
         </div>
         <div class="subsection">
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_13.jpg">
+                <a href="old-2017/images/showcase_13.jpg">
                     <img src="old-2017/images/showcase_13.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: 4px">
                 </a>
                 <ul>
@@ -357,7 +456,7 @@
         <div class="subsection">
             <h3>2D Game Prototype</h3>
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_11.gif">
+                <a href="old-2017/images/showcase_11.gif">
                     <img src="old-2017/images/showcase_11.jpg" width=440px style="float: right; margin-left: 10px; border: 1px solid; margin-top: -20px">
                 </a>
                 <ul>
@@ -370,7 +469,7 @@
             </div>
             <h3>Mobile Game</h3>
             <div style="display: inline-block;">
-                <a target="_blank" href="old-2017/images/showcase_14.gif">
+                <a href="old-2017/images/showcase_14.gif">
                     <img src="old-2017/images/showcase_14b.jpg" width=214px style="float: right; margin-left: 10px; border: 1px solid; margin-top: -20px">
                     <img src="old-2017/images/showcase_14a.jpg" width=214px style="float: right; margin-left: 10px; border: 1px solid; margin-top: -20px">
                 </a>
@@ -379,6 +478,10 @@
                     <li><span>
                         <span>Repository:</span>
                         <span><a target="_blank" href="https://github.com/gunstarpl/Mobile-Game-09-2015">GitHub</a></span>
+                    </span></li>
+                    <li><span>
+                        <span>Video:</span>
+                        <span><a target="_blank" href="old-2017/images/showcase_14.gif">GIF</a></span>
                     </span></li>
                 </ul>
             </div>
